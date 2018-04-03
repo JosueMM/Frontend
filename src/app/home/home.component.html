@@ -1,0 +1,112 @@
+
+<app-menu></app-menu>
+<div class="parallax text-white text-center">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1 class="display-1 col-md-12 col-sm-12">Entomologia</h1>
+        <p class="lead">Investiga sobre especias unicas</p>
+        <a class="section-scroll btn btn-border-w btn-circle" href="#about">Ver Mas</a>
+    </div>
+</div>
+
+<div>
+      
+    <img class="img-responsive" src="assets/images/Investiga.png" id="left">
+    <br>
+    <br>
+    <br>
+   
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">    
+<div class="container">
+<div class="process">
+    <div class="process-row">
+        <div class="process-step">
+            <img class="img-responsive circle" src="assets/images/pregunta.png" id="left">
+            <p>Pregunta</p>
+        </div>
+        <div class="process-step">
+            <img class="img-responsive circle" src="assets/images/libro.png" id="left">
+            <p>Aprende</p>
+        </div>
+        <div class="process-step">
+            <img class="img-responsive circle" src="assets/images/lupa.png" id="left">
+            <p>Investiga</p>
+        </div> 
+         <div class="process-step">
+            <img class="img-responsive circle" src="assets/images/info.png" id="left">
+            <p>Informate</p>
+        </div> 
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+<br>            
+     
+
+
+<div class="container cont col-sm-12">
+    <div ng2-carouselamos class="slides-wrapper  carouselImg" [items]="items" [width]="1500" [$prev]="prev" [$next]="next" [$item]="item">
+    </div>
+
+    <ng-template #prev>
+        <img class="img-responsive" src="assets/images/left-arrow.png" id="left">
+    </ng-template>
+
+    <ng-template #next>
+        <img class="img-responsive" src="assets/images/rigth-arrow.png" id="left">
+    </ng-template>
+
+    
+    <ng-template #item let-item let i="index">
+        
+        <div class="items">
+            <img class="img-responsive" src="{{ item.name }}" class="carouselImg">
+            
+        </div>
+
+    </ng-template>
+
+</div>
+<br>
+<br>
+
+
+<section class="progress-section">
+    <div class="container">
+        <div class="row">
+            <h1>_________________________Lo Mas Buscado_________________________</h1><br>
+             <div class="col-md-3">
+       <div class="progress-bars">
+       <h2>85%</h2>
+       </div><!--progress-bars--><br><br>
+       <h1>HIMENOPTEROS</h1>
+       </div>
+        <div class="col-md-3">
+       <div class="progress-bars-four">
+       <h2>40%</h2>
+       </div><!--progress-bars--><br><br>
+       <h1>DIPLURA</h1>
+       </div>
+    
+        <div class="col-md-3">
+       <div class="progress-bars-six">
+       <h2>65%</h2>
+       </div><!--progress-bars--><br><br>
+       <h1>PROTURA</h1>
+       </div>
+      
+      
+        <div class="col-md-3">
+       <div class="progress-bars-seven">
+       <h2>70%</h2>
+       </div><!--progress-bars--><br><br>
+       <h1>Artropodos</h1>
+       </div>
+        </div>
+    </div>
+    </section>
+  <app-footer></app-footer>
